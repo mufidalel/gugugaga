@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise for Parisya Kalyani Maleeka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scene0" class="scene">
+        <div id="passcode-container">
+            <input type="password" id="passcode-input" placeholder="Enter passcode">
+            <button id="submit-passcode">Submit</button>
+            <div id="passcode-error" class="hidden">Password wrong</div>
+            <div id="passcode-hint">ask the creator</div>
+        </div>
+    </div>
+    <div id="scene1" class="scene hidden">
+        <div id="click-anywhere">Click anywhere</div>
+    </div>
+    <div id="scene2" class="scene hidden">
+        <div id="birthday-text"></div>
+    </div>
+    <div id="scene3" class="scene hidden">
+        <canvas id="game-canvas" width="800" height="400"></canvas>
+        <div id="game-instruction">Use arrow keys to move and space to jump. Reach the door!</div>
+        <div id="mobile-controls">
+            <button id="left-btn">← Left</button>
+            <button id="right-btn">Right →</button>
+            <button id="jump-btn">Jump ↑</button>
+        </div>
+    </div>
+    <div id="scene4" class="scene hidden">
+        <div id="match-game">
+            <div id="match-container">
+                <div class="match match1" id="match1"></div>
+                <div class="match match2" id="match2"></div>
+                <div class="match match3" id="match3"></div>
+            </div>
+            <div id="match-instruction">Light all 3 matches (Click each one)</div>
+            <div id="match-count">Matches lit: <span id="match-counter">0</span>/3</div>
+        </div>
+    </div>
+    <div id="scene5" class="scene hidden">
+        <div id="typewriter-container">
+            <div id="typewriter-textbox"></div>
+            <div id="typewriter-cursor"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
